@@ -5,23 +5,24 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 
-public class PlayerCollectable : MonoBehaviour
+public class PlayerCollectables : MonoBehaviour
 {
-    private int gems = 0;
+    private int points = 0;
     //public int getGems { get {return gems;}];
 
-    [SerializeField] private TMP_Text gemsText;
-    [SerializeField] private AudioSource collectionSoundEffect;
+    [SerializeField] private TMP_Text pointsText;
+    //[SerializeField] private AudioSource collectionSoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Collectables"))
+        if(collision.tag.Equals("Collectables"))
         {
-            collectionSoundEffect.Play();
+            //collectionSoundEffect.Play();
             Destroy(collision.gameObject);
-            gems += 5;
+            points += 1;
+            SkillTree.Instance.PointsLeft = points;
             //Debug.Log("Gems: " + gems);
-            gemsText.text = "Gems: " + gems;
+            pointsText.text = "Points: " + points;
         }
 
         //if (collision.gameObject.CompareTag("FinishFlag"))
@@ -34,10 +35,10 @@ public class PlayerCollectable : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Drops"))
         {
-            collectionSoundEffect.Play();
+            //collectionSoundEffect.Play();
             Destroy(collision.gameObject);
-            gems += 5;
-            gemsText.text = "Gems: " + gems;
+            points += 5;
+            pointsText.text = "Gems: " + points;
         }
     }
 
@@ -49,6 +50,6 @@ public class PlayerCollectable : MonoBehaviour
     private void OnDisable()
     {
         PlayerPrefs.SetInt("PlayerLevel", SceneManager.GetActiveScene().buildIndex);
-        PlayerPrefs.SetInt("GemsCount", gems);
+        PlayerPrefs.SetInt("GemsCount", points);
     }
 }

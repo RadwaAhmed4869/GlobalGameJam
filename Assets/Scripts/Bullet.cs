@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 7.0f;
+    [SerializeField] private int bulletDamage = 5;
     private Rigidbody2D rb;
     private GameObject player;
     private GameObject shield;
@@ -36,8 +37,10 @@ public class Bullet : MonoBehaviour
         {
             if (!PlayerSHield.shielded)
             {
-                Destroy(collision.gameObject);
-                Destroy(gameObject);
+                Debug.Log("player dead");
+                Player.Instance.HP -= bulletDamage;
+                //Destroy(collision.gameObject);
+                //Destroy(gameObject);
             }
             else
             {
