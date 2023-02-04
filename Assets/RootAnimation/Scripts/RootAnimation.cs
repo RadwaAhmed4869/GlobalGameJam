@@ -10,6 +10,9 @@ public class RootAnimation : MonoBehaviour
     Animation anim;
     [SerializeField]
     Transform parent;
+    [SerializeField]
+    GameObject player;
+
     bool rootSpawned =false;
     float animTime = -1;
 
@@ -28,6 +31,7 @@ public class RootAnimation : MonoBehaviour
             timer -= Time.deltaTime;
         }
         if (Input.GetKeyDown(KeyCode.Mouse0) && !rootSpawned && !anim.IsPlaying("root animation")){
+            parent.position = new Vector3(player.transform.position.x , parent.position.y , parent.position.z);
             rootSpawned = true;
             mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             parent.LookAt(new Vector3(mousePos.x , mousePos.y , 0));
@@ -71,7 +75,7 @@ public class RootAnimation : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider2D){
         Debug.Log(gameObject.name);
         Debug.Log(collider2D.name);
-        if(anim["root animation"].speed == 1  && !collider2D.gameObject.Equals(IgnoredEdge)){
+        if(anim["root animation"].speed == 1  && !collider2D.gameObject.Equals(IgnoredEdge)  && collider2D.tag == "ScreenEdge"){
             animTime = anim["root animation"].time;
             anim.Stop("root animation");
         }
