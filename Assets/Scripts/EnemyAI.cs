@@ -31,6 +31,8 @@ public class EnemyAI : MonoBehaviour
 
     bool isPlayerInRange = false;
 
+    [SerializeField] float enemyScale; 
+
     void Start()
     {
         seeker = GetComponent<Seeker>();
@@ -114,11 +116,11 @@ public class EnemyAI : MonoBehaviour
 
             if (force.x >= 0.01f)
             {
-                enemyGFX.localScale = new Vector3(-1f, 1f, 1f);
+                enemyGFX.localScale = new Vector3(-enemyScale, enemyScale, enemyScale);
             }
             else if (force.x <= -0.01f)
             {
-                enemyGFX.localScale = new Vector3(1f, 1f, 1f);
+                enemyGFX.localScale = new Vector3(enemyScale, enemyScale, enemyScale);
             }
         }
     }
