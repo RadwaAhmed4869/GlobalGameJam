@@ -6,9 +6,8 @@ public class SmallEnemiesHealth : MonoBehaviour
 {
 	public int health = 10;
 
-	public GameObject deathEffect;
-
-	public bool isInvulnerable = false;
+	[SerializeField] private GameObject deathEffect;
+	[SerializeField] private GameObject Drop;
 
 	public void TakeDamage(int damage, Collider2D enemy)
 	{
@@ -23,7 +22,13 @@ public class SmallEnemiesHealth : MonoBehaviour
 	void Die(Collider2D enemy)
 	{
 		Debug.Log("small enemy die");
-		Instantiate(deathEffect, transform.position, Quaternion.identity);
+		//Instantiate(deathEffect, transform.position, Quaternion.identity);
+
+		GameObject effect = Instantiate(deathEffect, transform.position, transform.rotation);
+		effect.transform.localPosition = Vector3.zero;
+
 		Destroy(enemy.gameObject);
+
+		Instantiate(Drop, transform.position, transform.rotation);
 	}
 }

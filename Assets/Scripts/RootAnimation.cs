@@ -21,6 +21,9 @@ public class RootAnimation : MonoBehaviour
     int RootDamage = 45;
 
     float timer = -1f;
+
+    [SerializeField] private SmallEnemiesHealth smallHealth;
+
     void Start(){
          mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
@@ -80,11 +83,13 @@ public class RootAnimation : MonoBehaviour
             anim.Stop("root animation");
         }
         //Do Damage To Enemey
-        if(collider2D.tag == "Enemy"){
-            //collider2D.GetComponent<Enemey>().Damaged(RootDamage);
+        //if(collider2D.tag == "Enemy"){
+        //    //collider2D.GetComponent<Enemey>().Damaged(RootDamage);
+        //}
+
+        if (collider2D.CompareTag("FlyingEnemy"))
+        {
+            smallHealth.TakeDamage(20, collider2D);
         }
-
-
-
     }
 }
