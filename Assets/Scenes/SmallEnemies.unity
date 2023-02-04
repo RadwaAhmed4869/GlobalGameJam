@@ -1276,7 +1276,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1334,7 +1334,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1931,24 +1931,24 @@ MonoBehaviour:
     _bezierPath:
       points:
       - {x: -10.68687, y: 2.8527942, z: 0}
-      - {x: -10.391479, y: 2.7704475, z: 0}
-      - {x: -10.096087, y: 2.6881008, z: 0}
+      - {x: -10.390775, y: 2.7627678, z: 0}
+      - {x: -10.09468, y: 2.6727412, z: 0}
       - {x: -9.838047, y: 2.7040021, z: 0}
-      - {x: -8.874833, y: 2.7633586, z: 0}
-      - {x: -7.691627, y: 3.3862073, z: 0}
-      - {x: -6.761722, y: 3.644241, z: 0}
-      - {x: -5.769512, y: 3.9195633, z: 0}
-      - {x: -4.449725, y: 4.6302285, z: 0}
-      - {x: -3.4316607, y: 4.475869, z: 0}
-      - {x: -1.1753185, y: 4.133762, z: 0}
-      - {x: 0.78859615, y: 0.5190054, z: 0}
-      - {x: 3.0707092, y: 0.52781224, z: 0}
-      - {x: 5.011553, y: 0.5353021, z: 0}
-      - {x: 7.718843, y: 2.1860547, z: 0}
-      - {x: 8.57463, y: 3.9280536, z: 0}
-      - {x: 8.667786, y: 4.117678, z: 0}
-      - {x: 8.584608, y: 4.3730774, z: 0}
-      - {x: 8.501431, y: 4.6284766, z: 0}
+      - {x: -8.836613, y: 2.8259885, z: 0}
+      - {x: -7.732027, y: 3.7856543, z: 0}
+      - {x: -6.7620034, y: 4.0627937, z: 0}
+      - {x: -5.869688, y: 4.3177314, z: 0}
+      - {x: -4.6033382, y: 4.705278, z: 0}
+      - {x: -3.699141, y: 4.4963593, z: 0}
+      - {x: -1.8314828, y: 4.064829, z: 0}
+      - {x: -0.30282938, y: 1.1980178, z: 0}
+      - {x: 1.5932093, y: 0.91623133, z: 0}
+      - {x: 2.8225458, y: 0.7335291, z: 0}
+      - {x: 4.5989733, y: 1.340755, z: 0}
+      - {x: 5.551361, y: 2.1392572, z: 0}
+      - {x: 5.752557, y: 2.307944, z: 0}
+      - {x: 5.8520913, y: 2.612745, z: 0}
+      - {x: 5.951626, y: 2.917546, z: 0}
       isClosed: 0
       space: 1
       controlMode: 3
@@ -2852,7 +2852,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -2963,7 +2963,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAAAQIezyyi9eegIAADMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMFy2jAQ/RVG58LY2DXQW+sQ0kMSprSTiy/CWmMNsuSR5ADJ8O9dyTZ26Qnx9u3qvd2VPwmXpobcKr3RnD0rBuTbhLgz+TIZgk9wpgcld/wDes4bZ7Z0JOo5v6jlCvHQpRlVgdU8/y4PwpEDBBvJC6WrNTtAqow1CBdUGMCQVtZlS4Q+J+SMP9OVS7ngab5wpw88rYLJFY85SAt6oEbxLEqSYNXzZ/FyvlpGX1ddWpvVyFzQqgbmLAzJ87hLC1uaRHMdwxnJlRDcdMqIvdTeeUpr06AvJDBO0amXE84iBErgh9K6yuP016IwYLtGaHp54Bpb1tYlP1Tbx4qaY6vsnYrGS0iiZex1tWWf/2NMQx8utKqe+pvDwN1iS54ff9FLTo0dtXoMP4zE+xadqDjSvYC3EuSL2mjVSIZBqxuX2hiYPwx/b+bSEvLjgLdS78CmHnp+m+wM3YXLJErW02DRTcsZuvpmnFPBq73jz+IW2AnlB+B3AzSO6ieq95tjurqIOkl/DPymh/GKdYFHro3FUGdZOq171WhHJWvfQGetsanSEjzcOahBUmEvWyxj7yd6Fxtdexd5pO4xdZd3sf6N3KV4eOAHwV1oq063yZlSnZ7BlK+NFVzCINoFXrBPqZKyXbhxT/q0XaMLmo/SDg1n/+4ZiRaLhM1ZGNB9DAzodB8H4b4I4zyhiwVATPwicok+qdi2Qrv24NTkUFzi0vXfmMlG09ovP9P0tOEflRq1nMtC7XINIF/bCjfhoPESfKZszTg2aAfWcunnTT4zIlR+BJbdCmXe6fpsNc2GKhmp+buyDslI6j8qGXHwbbG3Gt45nNzlfbEruf4FUEsDBBQAAAgIAAAQIez11Ig+bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSsbm5WYpRiqFBYpJJakpqom6SiYFhUpqhSbJZorl5aqqJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAQIezyyi9eegIAADMFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIez11Ig+bQAAAHgAAAAJACQAAAAAAAAAAAAAAMcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfwMAAAAA
+    dataString: UEsDBBQAAAgIAAAQIezgO5hMegIAADMFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMFy2jAQ/RVG58LY4BjorTWE9JCECe3k4ouw1liDLHkkOUAy/HtXso1dekK8fbt6b3flL8KlqSCzSm80Z8+KAfk+Iu5Mvo364BOc6UHJHf+EjvPOmS0ciXrOG7VcIR66NKNKsJpnP+RBOHKAYC15rnS5ZgdIlLEG4ZwKAxjSyrpsidDXiJzxZ7x0KRc8Tefu9ImnZTC64jEDaUH31Fk0mcVxsOz4k2gxXS5mD8s2rcmqZSZoWQFzFvrkadSmhQ1NormW4YxkSghuWmXEXirvPKGVqdEXEhin6NTLiSYPCBTAD4V1lYfpr3luwLaN0PSy4hpb1tQlP1XTx5KaY6Psg4raS4hni8jraso+/8cYhz6ca1U+dTeHgbvFFjw7vtFLRo0dtHoIr3rxoW/RiYoj3Qt4L0C+qI1WtWQYtLp2qbWB6ar/ezOXFJAde7yRegfWVd/z22Qn6C5cxLN4PQ7m7bScoatvxjkRvNw7/iRqgJ1QfgB+N0DjqH6her85pq2LqJP0x8BvehiuWBt45NpYDLWWpdO6V7V2VLL2DXTWapsoLcHDrYMKJBX2ssUy9n6id7HBtXeRR+oeU3t5G+veyF2Kh3t+ENyFtup0m5wp1OkZTPFaW8El9KJd4AX7lCgpm4Ub9qRL29U6p9kg7VBz9u+ekdl8HrMpCwO6j4ABHe+jINznYZTFdD4HiIhfRC7RJxXbRmjbHpya7ItLXLruGzPaaFr55Weanjb8s1SDlnOZq12mAeRrU+EmHDRegs+UrRnHBu3AWi79vMlXSoTKjsDSW6HUO12fraZpXyUlFf9Q1iEpSfxHJSUOvi32VsMHh5O7vCt2Jde/UEsDBBQAAAgIAAAQIez11Ig+bQAAAHgAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jM011FQSi9KLMgoBooYgjilmSkgdrSSsbm5WYpRiqFBYpJJakpqom6SiYFhUpqhSbJZorl5aqqJUixQfUllQapfYm4qRE9AYklGWmZeSmZeup57UWaKO8hopdhaAFBLAQItABQAAAgIAAAQIezgO5hMegIAADMFAAALACQAAAAAAAAAAAAAAAAAAABncmFwaDAuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLAQItABQAAAgIAAAQIez11Ig+bQAAAHgAAAAJACQAAAAAAAAAAAAAAMcCAABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwUGAAAAAAIAAgC4AAAAfwMAAAAA
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -3228,7 +3228,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3313,17 +3313,14 @@ MonoBehaviour:
       - {x: -10.078355, y: 2.7993417, z: 0}
       - {x: -9.838047, y: 2.7040021, z: 0}
       - {x: -8.618856, y: 2.2203016, z: 0}
-      - {x: -7.494599, y: 0.3807869, z: 0}
+      - {x: -7.4941616, y: 0.38767466, z: 0}
       - {x: -6.1853786, y: 0.3011945, z: 0}
-      - {x: -3.7792501, y: 0.15491693, z: 0}
-      - {x: -1.3914403, y: 3.7014031, z: 0}
-      - {x: 1.0131272, y: 3.871422, z: 0}
-      - {x: 3.199595, y: 4.02602, z: 0}
-      - {x: 6.226495, y: 2.9321313, z: 0}
-      - {x: 7.95039, y: 1.5783486, z: 0}
-      - {x: 8.144217, y: 1.4261355, z: 0}
-      - {x: 8.265001, y: 1.1539273, z: 0}
-      - {x: 8.385787, y: 0.88171905, z: 0}
+      - {x: -3.6485438, y: 0.13356861, z: 0}
+      - {x: -1.0814552, y: 4.2623463, z: 0}
+      - {x: 1.4459047, y: 3.9865181, z: 0}
+      - {x: 1.7781513, y: 3.9502578, z: 0}
+      - {x: 2.0495722, y: 3.623656, z: 0}
+      - {x: 2.3209932, y: 3.2970543, z: 0}
       isClosed: 0
       space: 1
       controlMode: 3
@@ -3333,7 +3330,6 @@ MonoBehaviour:
         m_Center: {x: 0, y: 0, z: 0}
         m_Extent: {x: 2, y: 0.14433756, z: 0}
       perAnchorNormalsAngle:
-      - 0
       - 0
       - 0
       - 0

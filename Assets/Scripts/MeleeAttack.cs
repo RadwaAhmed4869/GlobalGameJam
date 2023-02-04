@@ -34,9 +34,9 @@ public class MeleeAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag(FlyingEnemy))
+        if (collision.CompareTag("FlyingEnemy"))
         {
-            smallHealth.TakeDamage(5);
+            smallHealth.TakeDamage(5, collision);
         }
     }
 }

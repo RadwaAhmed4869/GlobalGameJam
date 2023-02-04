@@ -24,10 +24,10 @@ public class AutomaticShooting : MonoBehaviour
     }
     void CheckIfTimeToFire()
     {
-        if (Time.time > nextFire)
-        {
-            Instantiate(bullet, transform.position, Quaternion.identity);
-            nextFire = Time.time + fireRate;
-        }
+        //if (Time.time > nextFire)
+        //{
+        //    Instantiate(bullet, transform.position, Quaternion.identity);
+        //    nextFire = Time.time + fireRate;
+        //}
     }
 }

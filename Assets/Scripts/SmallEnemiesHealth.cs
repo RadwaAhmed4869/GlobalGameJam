@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class SmallEnemiesHealth : MonoBehaviour
 {
-	public int health = 50;
+	public int health = 10;
 
 	public GameObject deathEffect;
 
 	public bool isInvulnerable = false;
 
-	public void TakeDamage(int damage)
+	public void TakeDamage(int damage, Collider2D enemy)
 	{
-		if (isInvulnerable)
-			return;
-
 		health -= damage;
 
 		if (health <= 0)
 		{
-			Die();
+			Die(enemy);
 		}
 	}
 
-	void Die()
+	void Die(Collider2D enemy)
 	{
 		Debug.Log("small enemy die");
 		Instantiate(deathEffect, transform.position, Quaternion.identity);
-		Destroy(gameObject);
+		Destroy(enemy.gameObject);
 	}
 }
