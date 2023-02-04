@@ -9,6 +9,8 @@ public class PlayerAnimation : MonoBehaviour
     private SpriteRenderer sprite;
     private Animator anim;
 
+    [SerializeField] private Transform meleeAttack;
+
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -30,11 +32,13 @@ public class PlayerAnimation : MonoBehaviour
         {
             anim.SetBool("isRunning", true);
             sprite.flipX = false;
+            meleeAttack.localPosition = new Vector2(0.2f, meleeAttack.localPosition.y);
         }
         else if (dirX < 0f)
         {
             anim.SetBool("isRunning", true);
             sprite.flipX = true;
+            meleeAttack.localPosition = new Vector2(-0.2f, meleeAttack.localPosition.y);
         }
         else
         {

@@ -28,31 +28,31 @@ public class nonBullets : MonoBehaviour
 
         }
     }
-    
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-        
-    //    if (collision.CompareTag(PLAYER_TAG))
-    //    {
-    //        if (!PlayerSHield.shielded)
-    //        {
-    //            Destroy(collision.gameObject);
-    //            Destroy(gameObject);
-    //        }
-    //        else
-    //        {
-    //            counterToDestroy++;
-    //            Debug.Log(counterToDestroy);
-    //            if(counterToDestroy == 5)
-    //            {
-    //                shield.SetActive(false);
-    //            }
-    //            else
-    //            {
-    //                Destroy(gameObject);
-    //            }
 
-    //        }
-    //    }
-    //}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if (collision.CompareTag(PLAYER_TAG))
+        {
+            if (!PlayerSHield.shielded)
+            {
+                Destroy(collision.gameObject);
+                Destroy(gameObject);
+            }
+            else
+            {
+                counterToDestroy++;
+                Debug.Log(counterToDestroy);
+                if (counterToDestroy == 5)
+                {
+                    shield.SetActive(false);
+                }
+                else
+                {
+                    Destroy(gameObject);
+                }
+
+            }
+        }
+    }
 }

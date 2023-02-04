@@ -13,9 +13,11 @@ GameObject:
   - component: {fileID: 2348852934416682792}
   - component: {fileID: 2348852934416682793}
   - component: {fileID: -7261112343555644796}
+  - component: {fileID: -6887455905914032131}
+  - component: {fileID: 5962342633050919199}
   m_Layer: 0
   m_Name: Flying Enemy
-  m_TagString: Untagged
+  m_TagString: FlyingEnemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -135,6 +137,37 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!58 &-6887455905914032131
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348852934416682799}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.076358795, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.71429634
+--- !u!114 &5962342633050919199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348852934416682799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b2194daaeb13d841a8159dd88f41b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  deathEffect: {fileID: 1903058454113864832, guid: f6be2524a7cc15c47bc9a990d4ae10e9, type: 3}
+  isInvulnerable: 0
 --- !u!1 &2348852934846632770
 GameObject:
   m_ObjectHideFlags: 0

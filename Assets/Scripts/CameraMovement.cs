@@ -16,12 +16,15 @@ public class CameraMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = Vector3.SmoothDamp(
-            transform.position,
-            player.position + offset,
-            ref currentVelocity,
-            smoothTime
-            );
+        if (player != null)
+        {
+            transform.position = Vector3.SmoothDamp(
+                transform.position,
+                player.position + offset,
+                ref currentVelocity,
+                smoothTime
+                );
+        }
     }
 
     //private void Update()

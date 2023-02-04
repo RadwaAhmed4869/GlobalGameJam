@@ -7,7 +7,6 @@ public class PlayerinRange : MonoBehaviour
 {
     [Header("Events")]
     [SerializeField] GameEvent onPlayerinRange;
-    [SerializeField] GameEvent onPlayerExitRange;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
