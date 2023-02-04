@@ -13,6 +13,9 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float speed = 4f;
     [SerializeField] private float nextWayPointDistance = 3f;
 
+    private GameObject player;
+    private string PLAYER_TAG = "Player";
+
     [SerializeField] private Transform enemyGFX;
 
     private Path pathToPlayer;
@@ -31,10 +34,19 @@ public class EnemyAI : MonoBehaviour
 
     bool isPlayerInRange = false;
 
-    [SerializeField] float enemyScale; 
+    [SerializeField] float enemyScale;
+
+    [SerializeField] private GameObject bullet;
+
+    private float fireRate;
+    private float nextFire;
 
     void Start()
     {
+        fireRate = 2f;
+        nextFire = Time.time;
+        player = GameObject.FindWithTag(PLAYER_TAG);
+
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
@@ -49,7 +61,7 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
-        if(seeker.IsDone())
+        if(seeker.IsDone() && player != null)
             seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
@@ -64,6 +76,8 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
+        if (player != null && isPlayerInRange) { CheckIfTimeToFire(); }
+
         if (!isPlayerInRange || !isFollowing)
         {
             //Vector3 dir = new Vector3(enemyPosition.x - transform.position.x, enemyPosition.y - transform.position.y, 0.0f);
@@ -78,10 +92,14 @@ public class EnemyAI : MonoBehaviour
                 //transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
             }
         }
+    }
 
-        if(isPlayerInRange)
+    void CheckIfTimeToFire()
+    {
+        if (Time.time > nextFire)
         {
-            //Shoot
+            Instantiate(bullet, transform.position, Quaternion.identity);
+            nextFire = Time.time + fireRate;
         }
     }
 
