@@ -1807,6 +1807,7 @@ MonoBehaviour:
   anim: {fileID: 998898528}
   parent: {fileID: 1731888513}
   player: {fileID: 0}
+  smallHealth: {fileID: 0}
 --- !u!212 &998898530
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3354,6 +3355,7 @@ MonoBehaviour:
   anim: {fileID: 1708997471}
   parent: {fileID: 445350288}
   player: {fileID: 1648529344}
+  smallHealth: {fileID: 5962342633050919199, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
 --- !u!212 &1708997473
 SpriteRenderer:
   m_ObjectHideFlags: 0
