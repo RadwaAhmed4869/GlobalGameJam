@@ -6,17 +6,14 @@ public class MeleeAttack : MonoBehaviour
 {
     [SerializeField] private GameObject handAttack;
 
-    private string FlyingEnemy = "FlyingEnemy";
-    private string MINIBOSS = "MiniBoss";
-    private string BIGBOSS = "BigBoss";
+    private string FLYINGENEMY = "FlyingEnemy";
+    [SerializeField] private int flyingEnemyDamage = 5;
     [SerializeField] private SmallEnemiesHealth smallHealth;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
+    private string MINIBOSS = "MiniBoss";
+
+    private string BIGBOSS = "BigBoss";
+
     void Update()
     {
         MeleeAttackFun();
@@ -34,9 +31,9 @@ public class MeleeAttack : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("FlyingEnemy"))
+        if (collision.CompareTag(FLYINGENEMY))
         {
-            smallHealth.TakeDamage(5, collision);
+            smallHealth.TakeDamage(flyingEnemyDamage, collision);
         }
     }
 }

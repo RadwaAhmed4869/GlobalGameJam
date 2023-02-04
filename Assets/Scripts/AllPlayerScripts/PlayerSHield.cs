@@ -28,7 +28,7 @@ public class PlayerSHield : MonoBehaviour
     int testTime;
     private void Update()
     {
-        Debug.Log("animation "+anim["health"].time);
+        //Debug.Log("animation "+anim["health"].time);
         //Debug.Log("Time.time    "+Time.time);
         counter++;
         //testTime = int.Parse(Time.time);

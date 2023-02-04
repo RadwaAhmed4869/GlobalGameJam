@@ -37,7 +37,6 @@ public class Bullet : MonoBehaviour
         {
             if (!PlayerSHield.shielded)
             {
-                Debug.Log("player dead");
                 Player.Instance.HP -= bulletDamage;
                 //Destroy(collision.gameObject);
                 //Destroy(gameObject);

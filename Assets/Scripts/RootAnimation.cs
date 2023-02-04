@@ -76,8 +76,8 @@ public class RootAnimation : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D collider2D){
-        Debug.Log(gameObject.name);
-        Debug.Log(collider2D.name);
+        //Debug.Log(gameObject.name);
+        //Debug.Log(collider2D.name);
         if(anim["root animation"].speed == 1  && !collider2D.gameObject.Equals(IgnoredEdge)  && collider2D.tag == "ScreenEdge"){
             animTime = anim["root animation"].time;
             anim.Stop("root animation");
