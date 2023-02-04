@@ -5,9 +5,14 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    private Vector3 offset = new Vector3(3, 1.2f, -10);
+    [SerializeField] private Vector3 offset;
     public float smoothTime = 0.25f;
     Vector3 currentVelocity;
+
+    private void Start()
+    {
+        offset = new Vector3(4f, 3.3f, -10);
+    }
 
     private void LateUpdate()
     {
