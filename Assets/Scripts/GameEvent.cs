@@ -11,7 +11,6 @@ public class GameEvent : ScriptableObject
     {
         for (int i = 0; i < listeners.Count; i++)
         {
-            Debug.Log(i);
             listeners[i].EventRaised();
         }
     }

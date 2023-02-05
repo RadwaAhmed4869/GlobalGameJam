@@ -57,7 +57,7 @@ public class RootAnimation : MonoBehaviour
 
             anim["root animation"].speed = 1;
             anim.Play("root animation");
-            timer = 1f;
+            timer = 0.5f;
         }else if (timer <= 0 && rootSpawned && !anim.IsPlaying("root animation")){
             rootSpawned = false;
             anim["root animation"].speed = -0.5f;
