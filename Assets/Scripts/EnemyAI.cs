@@ -60,6 +60,12 @@ public class EnemyAI : MonoBehaviour
         isPlayerInRange = true;
     }
 
+    public void PlayerInRangeTwo()
+    {
+        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        isPlayerInRange = true;
+    }
+
     void UpdatePath()
     {
         if(seeker.IsDone() && player != null)

@@ -7,6 +7,8 @@ public class PlayerinRange : MonoBehaviour
 {
     [Header("Events")]
     [SerializeField] GameEvent onPlayerinRange;
+    [SerializeField] GameEvent onPlayerinRangeTwo;
+
 
     [SerializeField] GameObject MiniBoss;
 
@@ -18,9 +20,15 @@ public class PlayerinRange : MonoBehaviour
             onPlayerinRange.Raise();
         }
 
-        if(collision.CompareTag("MiniBossRange"))
+        if (collision.CompareTag("Range2"))
         {
-            Debug.Log("MiniBossRange");
+            //  subscribe to path finding
+            onPlayerinRangeTwo.Raise();
+        }
+
+        if (collision.CompareTag("MiniBossRange"))
+        {
+            //Debug.Log("MiniBossRange");
             MiniBoss.SetActive(true);
         }
     }

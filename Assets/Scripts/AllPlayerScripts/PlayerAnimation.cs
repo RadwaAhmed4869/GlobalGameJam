@@ -19,9 +19,33 @@ public class PlayerAnimation : MonoBehaviour
     }
 
 
+    bool rootAttack = false;
+    bool basicAttack = false;
+    bool Jumpeffect = false;
     private void Update()
     {
+        if (rootAttack)
+        {
+            anim.SetBool("IsRootAttacking", false);
+        }
+        if (basicAttack)
+        {
+            anim.SetBool("IsBasicAttacking", false);
+        }
+
         dirX = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("IsBasicAttacking", true);
+            basicAttack = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            anim.SetBool("IsRootAttacking", true);
+            rootAttack = true;
+        }
 
         UpdateAnimationState();
     }
