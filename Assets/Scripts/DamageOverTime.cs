@@ -30,7 +30,7 @@ public class DamageOverTime : MonoBehaviour
     private void ApplyTickPerSecond(bool state)
     {
         if (state == false) return;
-        else if(Player.Instance.HP <= 0)
+        else if(Player.Instance.currentHealth <= 0)
         {
             //Player Die
         }
@@ -41,7 +41,7 @@ public class DamageOverTime : MonoBehaviour
             {
                 timer = 1;
                 //Debug.Log("Player HP = " + Player.Instance.HP);
-                Player.Instance.HP -= tick;
+                Player.Instance.currentHealth -= tick;
             }
         }
     }

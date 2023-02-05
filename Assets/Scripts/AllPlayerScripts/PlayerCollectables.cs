@@ -38,7 +38,7 @@ public class PlayerCollectables : MonoBehaviour
             //collectionSoundEffect.Play();
             Destroy(collision.gameObject);
             //points += 1;
-            Player.Instance.HP += 10;
+            Player.Instance.currentHealth += 10;
             //pointsText.text = "Gems: " + points;
         }
     }

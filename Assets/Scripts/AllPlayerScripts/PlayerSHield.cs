@@ -11,8 +11,6 @@ public class PlayerSHield : MonoBehaviour
     [SerializeField] private int shieldTime;
     [SerializeField] private float shieldCoolDown = 5f;
 
-    [SerializeField]
-    Animation anim;
 
     private int timer;
     private int counter = 0;
@@ -23,7 +21,6 @@ public class PlayerSHield : MonoBehaviour
         shielded = false;
         isNextClick = true;
         timer = shieldTime;
-        anim.Play("health");
     }
     int testTime;
     private void Update()

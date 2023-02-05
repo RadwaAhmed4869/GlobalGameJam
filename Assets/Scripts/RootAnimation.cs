@@ -24,6 +24,8 @@ public class RootAnimation : MonoBehaviour
 
     [SerializeField] private SmallEnemiesHealth smallHealth;
 
+    public int damage = 80;
+    public GameObject impactEffect;
     void Start(){
          mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
@@ -91,5 +93,13 @@ public class RootAnimation : MonoBehaviour
         {
             smallHealth.TakeDamage(RootDamage, collider2D);
         }
+
+        BossHealth enemy = collider2D.GetComponent<BossHealth>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
+        Instantiate(impactEffect, transform.position, transform.rotation);
     }
 }
