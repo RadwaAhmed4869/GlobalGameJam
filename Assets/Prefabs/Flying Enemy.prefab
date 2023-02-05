@@ -107,7 +107,6 @@ MonoBehaviour:
   pathCreator: {fileID: 0}
   endOfPathInstruction: 1
   partolingSpeed: 3
-  enemyScale: 1
   bullet: {fileID: 4305211479257862883, guid: 179187a3f934f32418145a6f8d335537, type: 3}
 --- !u!114 &-7261112343555644796
 MonoBehaviour:
@@ -166,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  deathEffect: {fileID: 1903058454113864832, guid: f6be2524a7cc15c47bc9a990d4ae10e9, type: 3}
+  deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338, type: 3}
   Drop: {fileID: 4940362821719744764, guid: abed4e9eb62a5ae4f9b191dfd10b3668, type: 3}
 --- !u!1 &2348852934846632770
 GameObject:
@@ -178,6 +177,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2348852934846632781}
   - component: {fileID: 2348852934846632780}
+  - component: {fileID: 8487772200559448896}
   m_Layer: 0
   m_Name: Small Enemy
   m_TagString: Untagged
@@ -241,14 +241,34 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a403aeedd24776f46b7c86f44834a834, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 212571b342efb3f43806aa3b0977fe79, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.5625, y: 1.2954545}
+  m_Size: {x: 6, y: 4}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &8487772200559448896
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2348852934846632770}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7dc8c6136915ef743a8f4f584373758c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0

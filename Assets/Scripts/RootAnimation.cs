@@ -24,6 +24,8 @@ public class RootAnimation : MonoBehaviour
 
     [SerializeField] private SmallEnemiesHealth smallHealth;
 
+    public int damage = 80;
+    public GameObject impactEffect;
     void Start(){
          mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
@@ -55,7 +57,7 @@ public class RootAnimation : MonoBehaviour
 
             anim["root animation"].speed = 1;
             anim.Play("root animation");
-            timer = 1f;
+            timer = 0.5f;
         }else if (timer <= 0 && rootSpawned && !anim.IsPlaying("root animation")){
             rootSpawned = false;
             anim["root animation"].speed = -0.5f;
@@ -89,7 +91,15 @@ public class RootAnimation : MonoBehaviour
 
         if (collider2D.CompareTag("FlyingEnemy"))
         {
-            smallHealth.TakeDamage(20, collider2D);
+            smallHealth.TakeDamage(RootDamage, collider2D);
         }
+
+        BossHealth enemy = collider2D.GetComponent<BossHealth>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
+        Instantiate(impactEffect, transform.position, transform.rotation);
     }
 }

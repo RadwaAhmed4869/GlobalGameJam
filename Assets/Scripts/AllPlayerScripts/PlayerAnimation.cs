@@ -10,6 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     private Animator anim;
 
     [SerializeField] private Transform meleeAttack;
+    [SerializeField] private Transform shield;
 
     private void Start()
     {
@@ -19,9 +20,33 @@ public class PlayerAnimation : MonoBehaviour
     }
 
 
+    bool rootAttack = false;
+    bool basicAttack = false;
+    bool Jumpeffect = false;
     private void Update()
     {
+        if (rootAttack)
+        {
+            anim.SetBool("IsRootAttacking", false);
+        }
+        if (basicAttack)
+        {
+            anim.SetBool("IsBasicAttacking", false);
+        }
+
         dirX = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            anim.SetBool("IsBasicAttacking", true);
+            basicAttack = true;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            anim.SetBool("IsRootAttacking", true);
+            rootAttack = true;
+        }
 
         UpdateAnimationState();
     }
@@ -33,12 +58,14 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetBool("isRunning", true);
             sprite.flipX = false;
             meleeAttack.localPosition = new Vector2(0.2f, meleeAttack.localPosition.y);
+            shield.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y,transform.localScale.z);
         }
         else if (dirX < 0f)
         {
             anim.SetBool("isRunning", true);
             sprite.flipX = true;
             meleeAttack.localPosition = new Vector2(-0.2f, meleeAttack.localPosition.y);
+            shield.transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
         else
         {

@@ -10,9 +10,17 @@ public class MeleeAttack : MonoBehaviour
     [SerializeField] private int flyingEnemyDamage = 5;
     [SerializeField] private SmallEnemiesHealth smallHealth;
 
-    private string MINIBOSS = "MiniBoss";
+    //private string MINIBOSS = "MiniBoss";
+    //[SerializeField] private int miniEnemyDamage = 50;
+    //[SerializeField] private MiniBossHealth miniHealth;
 
-    private string BIGBOSS = "BigBoss";
+    //private string BIGBOSS = "BigBoss";
+    //[SerializeField] private int bigEnemyDamage = 50;
+    //[SerializeField] private MiniBossHealth bigHealth;
+
+    public float speed = 20f;
+    public int damage = 40;
+    public GameObject impactEffect;
 
     void Update()
     {
@@ -35,5 +43,14 @@ public class MeleeAttack : MonoBehaviour
         {
             smallHealth.TakeDamage(flyingEnemyDamage, collision);
         }
+
+        BossHealth enemy = collision.GetComponent<BossHealth>();
+        if (enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
+        Instantiate(impactEffect, transform.position, transform.rotation);
+
     }
 }

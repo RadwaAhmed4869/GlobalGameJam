@@ -464,11 +464,11 @@ GameObject:
   - component: {fileID: 5217089949302888117}
   - component: {fileID: 5217089949302888116}
   - component: {fileID: 5217089949302888119}
-  - component: {fileID: 6314737131830508510}
   - component: {fileID: 1648529345}
   - component: {fileID: 1648529346}
   - component: {fileID: 1648529347}
   - component: {fileID: 1648529356}
+  - component: {fileID: 1138437367322845773}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -643,19 +643,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.009834581, y: -0.04953702}
   m_Size: {x: 0.18066052, y: 0.22364129}
   m_Direction: 0
---- !u!114 &6314737131830508510
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5217089949302888118}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b5ea7becbf8c71408fd10b41b3f51a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pointsText: {fileID: 0}
 --- !u!114 &1648529345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -682,7 +669,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   handAttack: {fileID: 1498232629}
+  flyingEnemyDamage: 5
   smallHealth: {fileID: 5962342633050919199, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
+  speed: 20
+  damage: 40
+  impactEffect: {fileID: 1473625048454486, guid: 284f05ab582ef494a9ab1dd8bc1e76ae, type: 3}
 --- !u!114 &1648529347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -715,3 +706,16 @@ MonoBehaviour:
   HP: 100
   respawnPoint: {x: 0, y: 0}
   isDead: 0
+--- !u!114 &1138437367322845773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217089949302888118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b5ea7becbf8c71408fd10b41b3f51a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pointsText: {fileID: 0}

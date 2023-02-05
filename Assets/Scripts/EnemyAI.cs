@@ -34,7 +34,7 @@ public class EnemyAI : MonoBehaviour
 
     bool isPlayerInRange = false;
 
-    [SerializeField] float enemyScale;
+    private float enemyScale;
 
     [SerializeField] private GameObject bullet;
 
@@ -43,6 +43,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        enemyScale = transform.localScale.x;
         fireRate = 2f;
         nextFire = Time.time;
         player = GameObject.FindWithTag(PLAYER_TAG);
@@ -54,6 +55,12 @@ public class EnemyAI : MonoBehaviour
     }
 
     public void PlayerInRange()
+    {
+        InvokeRepeating("UpdatePath", 0f, 0.5f);
+        isPlayerInRange = true;
+    }
+
+    public void PlayerInRangeTwo()
     {
         InvokeRepeating("UpdatePath", 0f, 0.5f);
         isPlayerInRange = true;
@@ -134,11 +141,11 @@ public class EnemyAI : MonoBehaviour
 
             if (force.x >= 0.01f)
             {
-                enemyGFX.localScale = new Vector3(-enemyScale, enemyScale, enemyScale);
+                enemyGFX.localScale = new Vector3(enemyScale, enemyScale, enemyScale);
             }
             else if (force.x <= -0.01f)
             {
-                enemyGFX.localScale = new Vector3(enemyScale, enemyScale, enemyScale);
+                enemyGFX.localScale = new Vector3(-enemyScale, enemyScale, enemyScale);
             }
         }
     }

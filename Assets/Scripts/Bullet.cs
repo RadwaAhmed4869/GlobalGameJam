@@ -26,7 +26,6 @@ public class Bullet : MonoBehaviour
             moveDirection = (player.transform.position - transform.position).normalized * moveSpeed;
             rb.velocity = new Vector2(moveDirection.x, moveDirection.y);
             Destroy(gameObject, 5f);
-
         }
     }
     
@@ -37,7 +36,7 @@ public class Bullet : MonoBehaviour
         {
             if (!PlayerSHield.shielded)
             {
-                Player.Instance.HP -= bulletDamage;
+                Player.Instance.currentHealth -= bulletDamage;
                 //Destroy(collision.gameObject);
                 //Destroy(gameObject);
             }
