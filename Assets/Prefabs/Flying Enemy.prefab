@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  deathEffect: {fileID: 1903058454113864832, guid: f6be2524a7cc15c47bc9a990d4ae10e9, type: 3}
+  deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338, type: 3}
   Drop: {fileID: 4940362821719744764, guid: abed4e9eb62a5ae4f9b191dfd10b3668, type: 3}
 --- !u!1 &2348852934846632770
 GameObject:
