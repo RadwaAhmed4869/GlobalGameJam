@@ -135,11 +135,11 @@ public class EnemyAI : MonoBehaviour
 
             if (force.x >= 0.01f)
             {
-                enemyGFX.localScale = new Vector3(-enemyScale, enemyScale, enemyScale);
+                enemyGFX.localScale = new Vector3(enemyScale, enemyScale, enemyScale);
             }
             else if (force.x <= -0.01f)
             {
-                enemyGFX.localScale = new Vector3(enemyScale, enemyScale, enemyScale);
+                enemyGFX.localScale = new Vector3(-enemyScale, enemyScale, enemyScale);
             }
         }
     }
