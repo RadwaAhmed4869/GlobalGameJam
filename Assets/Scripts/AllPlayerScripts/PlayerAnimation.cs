@@ -10,6 +10,7 @@ public class PlayerAnimation : MonoBehaviour
     private Animator anim;
 
     [SerializeField] private Transform meleeAttack;
+    [SerializeField] private Transform shield;
 
     private void Start()
     {
@@ -57,12 +58,14 @@ public class PlayerAnimation : MonoBehaviour
             anim.SetBool("isRunning", true);
             sprite.flipX = false;
             meleeAttack.localPosition = new Vector2(0.2f, meleeAttack.localPosition.y);
+            shield.transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y,transform.localScale.z);
         }
         else if (dirX < 0f)
         {
             anim.SetBool("isRunning", true);
             sprite.flipX = true;
             meleeAttack.localPosition = new Vector2(-0.2f, meleeAttack.localPosition.y);
+            shield.transform.localScale = new Vector3(-transform.localScale.x, transform.localScale.y, transform.localScale.z);
         }
         else
         {

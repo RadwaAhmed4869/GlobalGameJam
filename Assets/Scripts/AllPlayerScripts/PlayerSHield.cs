@@ -7,7 +7,7 @@ public class PlayerSHield : MonoBehaviour
 {
     public static bool shielded;
     [SerializeField] private GameObject Shield;
-    [SerializeField] private TMP_Text timerText;
+    //[SerializeField] private TMP_Text timerText;
     [SerializeField] private int shieldTime;
     [SerializeField] private float shieldCoolDown = 5f;
 
@@ -35,7 +35,7 @@ public class PlayerSHield : MonoBehaviour
             if (timer > 0 && shielded)
             {
                 timer--;
-                timerText.text = "Shield Timer: " + timer.ToString();
+                //timerText.text = "Shield Timer: " + timer.ToString();
             }
             //Debug.Log(timer);
             //ShowTextTimer(timer);
@@ -70,7 +70,7 @@ public class PlayerSHield : MonoBehaviour
         Shield.SetActive(false);
         shielded = false;
         timer = shieldTime;
-        timerText.text = " ";
+        //timerText.text = " ";
         
     }
     

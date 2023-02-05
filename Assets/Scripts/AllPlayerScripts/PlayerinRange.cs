@@ -29,7 +29,11 @@ public class PlayerinRange : MonoBehaviour
         if (collision.CompareTag("MiniBossRange"))
         {
             //Debug.Log("MiniBossRange");
-            MiniBoss.SetActive(true);
+            if (MiniBoss != null)
+            {
+                MiniBoss.SetActive(true);
+
+            }
         }
     }
 }
