@@ -423,7 +423,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7752760107885589881, guid: 72a2200899a50b94897b62d786cb735d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7752760107885589882, guid: 72a2200899a50b94897b62d786cb735d, type: 3}
       propertyPath: m_Pivot.x
@@ -1184,6 +1184,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5217089949302888110, guid: 0dea513a34c977347818c839c85a8db9, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5217089949302888118, guid: 0dea513a34c977347818c839c85a8db9, type: 3}
       propertyPath: m_Name
       value: Player (1)
@@ -1562,12 +1566,24 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.36
+      value: 8.14
       objectReference: {fileID: 0}
     - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2
+      value: 2.6
       objectReference: {fileID: 0}
     - target: {fileID: 6980861914356666960, guid: 789edd33e4cc98141bc9c10c03490998, type: 3}
       propertyPath: m_LocalPosition.z
