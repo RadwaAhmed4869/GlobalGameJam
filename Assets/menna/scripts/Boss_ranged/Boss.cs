@@ -9,6 +9,10 @@ public class Boss : MonoBehaviour
 
 	public bool isFlipped = false;
 
+    private void Start()
+    {
+		this.gameObject.SetActive(false);
+	}
 	public void LookAtPlayer()
 	{
 		Vector3 flipped = transform.localScale;
@@ -27,5 +31,11 @@ public class Boss : MonoBehaviour
 			isFlipped = true;
 		}
 	}
+
+	public void MiniBossAppear()
+    {
+		Debug.Log("TRUE");
+		this.gameObject.SetActive(true);
+    }
 
 }
