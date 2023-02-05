@@ -27,6 +27,8 @@ public class SkillTree : MonoBehaviour
 
     private void Awake()
     {
+        //Debug.Log("AWAKE FROM SKILLTREE");
+        this.gameObject.SetActive(false);
         Instance ??= this;
     }
     void Start()

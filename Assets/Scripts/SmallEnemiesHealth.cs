@@ -21,7 +21,7 @@ public class SmallEnemiesHealth : MonoBehaviour
 
 	void Die(Collider2D enemy)
 	{
-		Debug.Log("small enemy die");
+		//Debug.Log("small enemy die");
 		//Instantiate(deathEffect, transform.position, Quaternion.identity);
 
 		GameObject effect = Instantiate(deathEffect, transform.position, transform.rotation);

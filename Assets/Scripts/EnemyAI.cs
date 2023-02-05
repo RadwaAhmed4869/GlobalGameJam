@@ -34,7 +34,7 @@ public class EnemyAI : MonoBehaviour
 
     bool isPlayerInRange = false;
 
-    [SerializeField] float enemyScale;
+    private float enemyScale;
 
     [SerializeField] private GameObject bullet;
 
@@ -43,6 +43,7 @@ public class EnemyAI : MonoBehaviour
 
     void Start()
     {
+        enemyScale = transform.localScale.x;
         fireRate = 2f;
         nextFire = Time.time;
         player = GameObject.FindWithTag(PLAYER_TAG);

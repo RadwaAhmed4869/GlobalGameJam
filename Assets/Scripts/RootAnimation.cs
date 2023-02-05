@@ -89,7 +89,7 @@ public class RootAnimation : MonoBehaviour
 
         if (collider2D.CompareTag("FlyingEnemy"))
         {
-            smallHealth.TakeDamage(20, collider2D);
+            smallHealth.TakeDamage(RootDamage, collider2D);
         }
     }
 }
