@@ -15,9 +15,9 @@ public class Skill : MonoBehaviour
     [SerializeField] Skill childSkill;
 
     [SerializeField] GameObject arrowImage = null;
-    [SerializeField][Range(0f, 0.25f)] float Buff1 = 0.2f;
-    [SerializeField][Range(0f, 0.25f)] float Buff2 = 0.2f;
-    [SerializeField][Range(0f, 0.25f)] float Buff3 = 0.2f;
+    [SerializeField][Range(0f, 0.25f)] float damageBuff = 0.2f;
+    [SerializeField][Range(0f, 0.25f)] float maxHealthBuff = 0.2f;
+    [SerializeField][Range(0f, 0.25f)] float shieldBuff = 0.2f;
 
     public int CurrentCount { get => currentCount; set => currentCount = value; }
 
@@ -35,13 +35,13 @@ public class Skill : MonoBehaviour
     }
     public void Lock()
     {
-        Color clr = new Color(0.25f, 0.25f, 0.25f);
+        Color clr = new Color(0.1f, 0.1f, 0.1f, 1);
         btn.interactable = false;
         image.color = clr;
         countTxt.color = clr;
         if (arrowImage != null)
         {
-            arrowImage.GetComponent<Image>().color = new Color(1, 1, 1, 0.15f);
+            arrowImage.GetComponent<Image>().color = new Color(1, 1, 1, 0.5f);
         }
         if (countTxt != null)
         {
@@ -88,10 +88,9 @@ public class Skill : MonoBehaviour
     public void AquireBuff()
     {
         Debug.Log("Buff " + gameObject.name + " Aquired");
-        Debug.Log(Buff1);
-        Debug.Log(Buff2);
-        Debug.Log(Buff3);
+        Debug.Log(damageBuff);
+        Debug.Log(maxHealthBuff);
+        Debug.Log(shieldBuff);
         //TODO
-        
     }
 }
