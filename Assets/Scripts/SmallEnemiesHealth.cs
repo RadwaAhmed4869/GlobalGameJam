@@ -27,8 +27,7 @@ public class SmallEnemiesHealth : MonoBehaviour
 		GameObject effect = Instantiate(deathEffect, enemy.transform.position, enemy.transform.rotation);
 		//effect.transform.localPosition = Vector3.zero;
 
+		Instantiate(Drop, enemy.transform.position, enemy.transform.rotation);
 		Destroy(enemy.gameObject);
-
-		Instantiate(Drop, transform.position, transform.rotation);
 	}
 }
