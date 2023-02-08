@@ -26,6 +26,8 @@ public class RootAnimation : MonoBehaviour
 
     public int damage = 80;
     public GameObject impactEffect;
+
+    private float offsetY = 1.48f;
     void Start(){
          mainCamera = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();
     }
@@ -35,8 +37,9 @@ public class RootAnimation : MonoBehaviour
         if(timer>0){
             timer -= Time.deltaTime;
         }
+
         if (Input.GetKeyDown(KeyCode.Mouse1) && !rootSpawned && !anim.IsPlaying("root animation")){
-            parent.position = new Vector3(player.transform.position.x , parent.position.y , parent.position.z);
+            parent.position = new Vector3(player.transform.position.x , player.transform.position.y - offsetY , parent.position.z);
             rootSpawned = true;
             mousePos = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             parent.LookAt(new Vector3(mousePos.x , mousePos.y , 0));

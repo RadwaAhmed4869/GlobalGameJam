@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 2348852934416682799}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.64, y: 5.1, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2348852934846632781}
   m_Father: {fileID: 0}
@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe022ad33e3343d4a80e9ef8539586b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFollowing: 0
-  target: {fileID: 0}
+  isFollowing: 1
+  target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
   speed: 400
   nextWayPointDistance: 3
   enemyGFX: {fileID: 2348852934416682794}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 30
-  deathEffect: {fileID: 1755349173569476, guid: 3c45864be6a059a4a82a25e285298338, type: 3}
+  deathEffect: {fileID: 8092643496300594859, guid: 6d710964ed1061348b4152823b14777f, type: 3}
   Drop: {fileID: 4940362821719744764, guid: abed4e9eb62a5ae4f9b191dfd10b3668, type: 3}
 --- !u!1 &2348852934846632770
 GameObject:
