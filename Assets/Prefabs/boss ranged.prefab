@@ -25,14 +25,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3846509426612917778}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.959999, z: 0.0014197273}
+  m_LocalRotation: {x: -0, y: -0, z: 0.26245713, w: 0.9649437}
+  m_LocalPosition: {x: 0.13999939, y: 3, z: 0.0014197273}
   m_LocalScale: {x: 0.48, y: 0.48, z: 0.48}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 3846509426664729199}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 30.432}
 --- !u!212 &3846509426612917775
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 103
   m_Sprite: {fileID: 21300000, guid: 6c24caab8985c004abc06c7d51b95a69, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17bcefc4b3ded5d4cb6725c6ef3b8d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: 1678408014961404920, guid: c91db5dd7e1b3f54bab482c6e7685ecd, type: 3}
+  bullet: {fileID: 4305211479257862883, guid: 179187a3f934f32418145a6f8d335537, type: 3}
   startShootCoolDown: 3
 --- !u!1 &3846509426664729197
 GameObject:
@@ -178,7 +178,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_Sprite: {fileID: 21300000, guid: 0f1d3f515f3863e47938c0fef996bded, type: 3}
   m_Color: {r: 0.9811321, g: 0.032395888, b: 0.032395888, a: 1}
   m_FlipX: 0
@@ -241,7 +241,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.73160267, y: 0.15571117}
@@ -275,7 +275,7 @@ MonoBehaviour:
   attackRange: 1.2
   attackMask:
     serializedVersion: 2
-    m_Bits: 2048
+    m_Bits: 34816
 --- !u!114 &9221973498016894692
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -12,7 +12,6 @@ public class SkillTree : MonoBehaviour
     [SerializeField] SkillTree skillTree;
 
     private static SkillTree instance;
-
     public int PointsLeft   //Property
     { 
         get => pointsLeft;
@@ -31,6 +30,7 @@ public class SkillTree : MonoBehaviour
         this.gameObject.SetActive(false);
         Instance ??= this;
     }
+
     void Start()
     {
         Init();
@@ -52,7 +52,7 @@ public class SkillTree : MonoBehaviour
         }
     }
 
-    private void UpdatePointsLeftText()
+    public void UpdatePointsLeftText()
     {
         pointsLeftText.text = PointsLeft.ToString();
     }

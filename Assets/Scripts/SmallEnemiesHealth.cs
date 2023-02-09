@@ -23,12 +23,11 @@ public class SmallEnemiesHealth : MonoBehaviour
 	{
 		//Debug.Log("small enemy die");
 		//Instantiate(deathEffect, transform.position, Quaternion.identity);
+		//Debug.Log(enemy.gameObject.name);
+		GameObject effect = Instantiate(deathEffect, enemy.transform.position, enemy.transform.rotation);
+		//effect.transform.localPosition = Vector3.zero;
 
-		GameObject effect = Instantiate(deathEffect, transform.position, transform.rotation);
-		effect.transform.localPosition = Vector3.zero;
-
+		Instantiate(Drop, enemy.transform.position, enemy.transform.rotation);
 		Destroy(enemy.gameObject);
-
-		Instantiate(Drop, transform.position, transform.rotation);
 	}
 }

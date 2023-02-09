@@ -32,6 +32,7 @@ public class UIManager : MonoBehaviour
     void Resume()
     {
         skillTree.SetActive(!skillTree.activeSelf);
+        SkillTree.Instance.UpdatePointsLeftText();
         Time.timeScale = 1.0f;
         GameIsPaused = false;
     }
