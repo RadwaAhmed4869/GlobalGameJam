@@ -10587,6 +10587,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2348852934416682795, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
+      propertyPath: m_Mass
+      value: 500
+      objectReference: {fileID: 0}
     - target: {fileID: 2348852934416682799, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
       propertyPath: m_Name
       value: Flying Enemy (2)
@@ -11697,6 +11701,10 @@ PrefabInstance:
       propertyPath: pointsText
       value: 
       objectReference: {fileID: 1886706740}
+    - target: {fileID: 7974730532206136673, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7974730532206136684, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: MiniBoss
       value: 
