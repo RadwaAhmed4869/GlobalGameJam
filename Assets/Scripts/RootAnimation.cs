@@ -103,6 +103,7 @@ public class RootAnimation : MonoBehaviour
             enemy.TakeDamage(damage);
         }
 
-        Instantiate(impactEffect, transform.position, transform.rotation);
+        GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
+        Destroy(effect , 3);
     }
 }
