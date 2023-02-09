@@ -11697,6 +11697,10 @@ PrefabInstance:
       propertyPath: pointsText
       value: 
       objectReference: {fileID: 1886706740}
+    - target: {fileID: 7974730532206136673, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+      propertyPath: currentHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7974730532206136684, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: MiniBoss
       value: 
