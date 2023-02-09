@@ -10,6 +10,8 @@ public class EmotionFollowerAI : MonoBehaviour
     public float smoothTime = 0.25f;
     Vector3 currentVelocity;
 
+    [SerializeField] private bool isFollower = false;
+
     private void Start()
     {
         offset = new Vector3(-0.7f, 1.05f, 0);
@@ -17,7 +19,7 @@ public class EmotionFollowerAI : MonoBehaviour
 
     private void LateUpdate()
     {
-        if (player != null)
+        if (player != null && isFollower)
         {
             transform.position = Vector3.SmoothDamp(
                 transform.position,
