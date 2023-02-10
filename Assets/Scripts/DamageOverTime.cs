@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageOverTime : MonoBehaviour
 {
-    [SerializeField][Range(0, 10)] int tick = 1;
+    [SerializeField][Range(0, 15)] int tick = 1;
     [SerializeField] bool EnteredDOTZone = false;
     [SerializeField] float timer = 1;
 

@@ -25,7 +25,6 @@ public class RootAnimation : MonoBehaviour
     [SerializeField] private SmallEnemiesHealth smallHealth;
 
     public int damage = 80;
-    public GameObject impactEffect;
 
     private float offsetY = 1.48f;
     void Start(){
@@ -102,8 +101,5 @@ public class RootAnimation : MonoBehaviour
         {
             enemy.TakeDamage(damage);
         }
-
-        GameObject effect = Instantiate(impactEffect, transform.position, transform.rotation);
-        Destroy(effect , 3);
     }
 }

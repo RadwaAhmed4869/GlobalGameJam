@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFollowing: 1
-  target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+  target: {fileID: 0}
   speed: 400
   nextWayPointDistance: 3
   enemyGFX: {fileID: 2348852934416682794}
@@ -167,6 +167,7 @@ MonoBehaviour:
   health: 30
   deathEffect: {fileID: 8092643496300594859, guid: 6d710964ed1061348b4152823b14777f, type: 3}
   Drop: {fileID: 4940362821719744764, guid: abed4e9eb62a5ae4f9b191dfd10b3668, type: 3}
+  dropChance: 0.4
 --- !u!1 &2348852934846632770
 GameObject:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 3732324780309004326}
   - component: {fileID: 2753565795926339520}
   m_Layer: 0
-  m_Name: NonBullet
+  m_Name: BossBullet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,7 +138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  bulletDamage: 20
+  bulletDamage: 45
 --- !u!95 &2753565795926339520
 Animator:
   serializedVersion: 5
