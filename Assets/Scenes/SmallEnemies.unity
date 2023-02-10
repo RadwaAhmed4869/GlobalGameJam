@@ -11748,5 +11748,13 @@ PrefabInstance:
       propertyPath: MiniBoss
       value: 
       objectReference: {fileID: 2107287568}
+    - target: {fileID: 7974730533094847893, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7974730533094847896, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
