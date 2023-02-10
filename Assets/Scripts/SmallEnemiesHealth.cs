@@ -28,6 +28,7 @@ public class SmallEnemiesHealth : MonoBehaviour
 		//Instantiate(deathEffect, transform.position, Quaternion.identity);
 		//Debug.Log(enemy.gameObject.name);
 		GameObject effect = Instantiate(deathEffect, enemy.transform.position, enemy.transform.rotation);
+		Destroy(effect, 1.5f);
 		//effect.transform.localPosition = Vector3.zero;
 
 		if (Random.Range(0f, 1f) <= dropChance)
