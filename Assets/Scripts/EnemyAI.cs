@@ -13,8 +13,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float speed = 4f;
     [SerializeField] private float nextWayPointDistance = 3f;
 
-    private GameObject player;
-    private string PLAYER_TAG = "Player";
+    //private GameObject player;
+    //private string PLAYER_TAG = "Player";
 
     [SerializeField] private Transform enemyGFX;
 
@@ -46,7 +46,7 @@ public class EnemyAI : MonoBehaviour
         enemyScale = transform.localScale.x;
         fireRate = 2f;
         nextFire = Time.time;
-        player = GameObject.FindWithTag(PLAYER_TAG);
+        //player = GameObject.FindWithTag(PLAYER_TAG);
 
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
@@ -68,7 +68,7 @@ public class EnemyAI : MonoBehaviour
 
     void UpdatePath()
     {
-        if(seeker.IsDone() && player != null)
+        if(seeker.IsDone() && target != null)
             seeker.StartPath(rb.position, target.position, OnPathComplete);
     }
 
@@ -83,7 +83,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (player != null && isPlayerInRange) { CheckIfTimeToFire(); }
+        if (target != null && isPlayerInRange) { CheckIfTimeToFire(); }
 
         if (!isPlayerInRange || !isFollowing)
         {
