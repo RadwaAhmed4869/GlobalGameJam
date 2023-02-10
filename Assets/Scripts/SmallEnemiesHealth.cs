@@ -9,6 +9,9 @@ public class SmallEnemiesHealth : MonoBehaviour
 	[SerializeField] private GameObject deathEffect;
 	[SerializeField] private GameObject Drop;
 
+	[SerializeField] private float dropChance = 0.4f;
+
+
 	public void TakeDamage(int damage, Collider2D enemy)
 	{
 		health -= damage;
@@ -27,7 +30,11 @@ public class SmallEnemiesHealth : MonoBehaviour
 		GameObject effect = Instantiate(deathEffect, enemy.transform.position, enemy.transform.rotation);
 		//effect.transform.localPosition = Vector3.zero;
 
-		Instantiate(Drop, enemy.transform.position, enemy.transform.rotation);
+		if (Random.Range(0f, 1f) <= dropChance)
+		{
+			Instantiate(Drop, enemy.transform.position, enemy.transform.rotation);
+		}
+
 		Destroy(enemy.gameObject);
 	}
 }
