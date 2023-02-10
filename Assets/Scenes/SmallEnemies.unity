@@ -1917,7 +1917,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 442a981a9dad0c14db60f68cc881ae4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tick: 10
+  tick: 15
   EnteredDOTZone: 0
   timer: 0.5
 --- !u!1 &442966644
@@ -4028,7 +4028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 442a981a9dad0c14db60f68cc881ae4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tick: 10
+  tick: 15
   EnteredDOTZone: 0
   timer: 0.5
 --- !u!1 &793061206
@@ -4688,6 +4688,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3846509426612917772, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: 4305211479257862883, guid: 81eeeee76952529468dbdde5e18f380c, type: 3}
     - target: {fileID: 3846509426664729197, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
       propertyPath: m_Name
       value: boss ranged
