@@ -6,28 +6,46 @@ using Pathfinding;
 public class EmotionFollowerAI : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private Vector3 offset;
+    private Rigidbody2D rb2D;
+    [SerializeField] private Vector3 offsetRight = new Vector3(-0.7f, 1.05f, 0);
+    [SerializeField] private Vector3 offsetLeft = new Vector3(0.7f, 1.05f, 0);
+    private Vector3 currentOffset;
     public float smoothTime = 0.25f;
     Vector3 currentVelocity;
 
     [SerializeField] private bool isFollower = false;
 
+
     private void Start()
     {
-        offset = new Vector3(-0.7f, 1.05f, 0);
+        rb2D = player.GetComponent<Rigidbody2D>();
+        currentOffset = offsetLeft;
     }
 
     private void LateUpdate()
     {
         if (player != null && isFollower)
         {
+            if(rb2D.velocity.x > 0)
+            {
+                currentOffset = offsetRight;
+            }
+            else
+            {
+                currentOffset = offsetLeft;
+            }
             transform.position = Vector3.SmoothDamp(
                 transform.position,
-                player.position + offset,
+                player.position + currentOffset,
                 ref currentVelocity,
                 smoothTime
                 );
         }
+    }
+
+    public void setEmotionFollowing()
+    {
+        isFollower = true;
     }
 
     //[SerializeField] private Transform player;

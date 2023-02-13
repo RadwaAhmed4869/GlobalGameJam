@@ -11,6 +11,7 @@ public class PlayerinRange : MonoBehaviour
 
 
     [SerializeField] GameObject MiniBoss;
+    [SerializeField] GameObject MeleeBoss;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -32,6 +33,16 @@ public class PlayerinRange : MonoBehaviour
             if (MiniBoss != null)
             {
                 MiniBoss.SetActive(true);
+
+            }
+        }
+
+        if (collision.CompareTag("MeleeBossRange"))
+        {
+            //Debug.Log("MiniBossRange");
+            if (MeleeBoss != null)
+            {
+                MeleeBoss.SetActive(true);
 
             }
         }

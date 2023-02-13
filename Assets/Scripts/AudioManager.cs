@@ -26,7 +26,7 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        PlayMusic("backGround");
+        PlayMusic("Theme");
         //playSFX("glassBreaking");
     }
 

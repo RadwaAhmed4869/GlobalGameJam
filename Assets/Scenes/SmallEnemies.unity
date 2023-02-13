@@ -3132,8 +3132,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 713164700}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.7, y: 15.7, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 2.92, y: 16.28, z: 0}
+  m_LocalScale: {x: 1, y: 0.74375004, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 827843578}
@@ -3205,7 +3205,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 101
   m_Sprite: {fileID: 1037018028, guid: 1fbfd745e9402694c9f71e6dfd740501, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4740,23 +4740,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5724072234150196526, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9221973498016894692, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 5217089949106228084}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
---- !u!114 &847411892 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3837888466464450223, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
-  m_PrefabInstance: {fileID: 847411891}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107287568}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8179a3aa67836be4481fefaad7803c1f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &875116325 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2348852934416682793, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
@@ -10142,7 +10135,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805118759}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.55, y: 19.63, z: 0.15928875}
+  m_LocalPosition: {x: -1.55, y: 20.9, z: 0.15928875}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10739,7 +10732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23a0621161997d94c96642a5fcc62272, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bossHealth: {fileID: 847411892}
+  bossHealth: {fileID: 0}
   slider: {fileID: 1975148503}
 --- !u!114 &1975148503 stripped
 MonoBehaviour:
@@ -11354,11 +11347,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2107287568 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3846509426664729197, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
-  m_PrefabInstance: {fileID: 847411891}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2117052994 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4299605149567331802, guid: e1240a6d91da6424684065f42fb98312, type: 3}
@@ -11762,7 +11750,7 @@ PrefabInstance:
     - target: {fileID: 7974730532206136684, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: MiniBoss
       value: 
-      objectReference: {fileID: 2107287568}
+      objectReference: {fileID: 0}
     - target: {fileID: 7974730533094847893, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_SortingOrder
       value: 1

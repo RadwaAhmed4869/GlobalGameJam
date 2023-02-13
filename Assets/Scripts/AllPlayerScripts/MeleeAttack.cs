@@ -20,7 +20,6 @@ public class MeleeAttack : MonoBehaviour
 
     public float speed = 20f;
     public int damage = 40;
-    //public GameObject impactEffect;
 
     void Update()
     {
@@ -49,8 +48,5 @@ public class MeleeAttack : MonoBehaviour
         {
             enemy.TakeDamage(damage);
         }
-
-        //Instantiate(impactEffect, transform.position, transform.rotation);
-
     }
 }

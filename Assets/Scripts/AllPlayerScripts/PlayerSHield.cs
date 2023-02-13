@@ -15,6 +15,8 @@ public class PlayerSHield : MonoBehaviour
     private int timer;
     private int counter = 0;
     private bool isNextClick;
+
+    //private Vector3 shieldScale = new Vector3(1.52f, 2.2f, 1.52f);
     
     private void Start()
     {
@@ -46,6 +48,7 @@ public class PlayerSHield : MonoBehaviour
         //anim["health"].time = 10f;
         //anim["health"].speed = 1;
         
+        //Shield.transform.localScale = shieldScale;
     }
     void CheckShield()
     {
@@ -56,9 +59,7 @@ public class PlayerSHield : MonoBehaviour
             isNextClick = false;
             Invoke("NoShield", shieldTime);
             Invoke("CheckNextClick", shieldCoolDown+shieldTime);
-            
         }
-
     }
 
     void CheckNextClick()

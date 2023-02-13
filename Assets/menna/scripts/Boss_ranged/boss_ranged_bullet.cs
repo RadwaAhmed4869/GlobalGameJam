@@ -5,7 +5,7 @@ using UnityEngine;
 public class boss_ranged_bullet : MonoBehaviour
 {
     public float speed;
-
+    public GameObject splashBullet;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +21,7 @@ public class boss_ranged_bullet : MonoBehaviour
     {
       if(other.gameObject.tag == "Player")
         {
+            Instantiate(splashBullet , transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

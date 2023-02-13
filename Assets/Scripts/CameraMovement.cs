@@ -5,22 +5,34 @@ using UnityEngine;
 public class CameraMovement : MonoBehaviour
 {
     [SerializeField] private Transform player;
-    [SerializeField] private Vector3 offset;
+    private Rigidbody2D rb2D;
+    private Vector3 offsetRight = new Vector3(4f, 2.8f, -10);
+    private Vector3 offsetLeft = new Vector3(-4f, 2.8f, -10);
+    private Vector3 currentOffset;
     public float smoothTime = 0.25f;
     Vector3 currentVelocity;
 
     private void Start()
     {
-        offset = new Vector3(4f, 2.8f, -10);
+        rb2D = player.GetComponent<Rigidbody2D>();
+        currentOffset = offsetRight;
     }
 
     private void LateUpdate()
     {
         if (player != null)
         {
+            if (rb2D.velocity.x > 0)
+            {
+                currentOffset = Vector3.Lerp(currentOffset, offsetRight, 1f);
+            }
+            else if(rb2D.velocity.x < 0)
+            {
+                currentOffset = Vector3.Lerp(currentOffset, offsetLeft, 1f);
+            }
             transform.position = Vector3.SmoothDamp(
                 transform.position,
-                player.position + offset,
+                player.position + currentOffset,
                 ref currentVelocity,
                 smoothTime
                 );

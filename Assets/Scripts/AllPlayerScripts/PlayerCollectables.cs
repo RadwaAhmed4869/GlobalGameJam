@@ -10,7 +10,6 @@ public class PlayerCollectables : MonoBehaviour
     private int points = 0;
     //public int getGems { get {return gems;}];
 
-    [SerializeField] private TMP_Text pointsText;
     //[SerializeField] private AudioSource collectionSoundEffect;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -22,7 +21,6 @@ public class PlayerCollectables : MonoBehaviour
             points += 1;
             SkillTree.Instance.PointsLeft = points;
             //Debug.Log("Gems: " + gems);
-            pointsText.text = "Points: " + points;
         }
 
         //if (collision.gameObject.CompareTag("FinishFlag"))
