@@ -5119,6 +5119,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 5724072234150196526, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 16.27
+      objectReference: {fileID: 0}
     - target: {fileID: 5724072235173029773, guid: 3cd70b4bf33cce743b6340739022b3bc, type: 3}
       propertyPath: enemyIsDead
       value: 
@@ -9814,7 +9818,7 @@ MonoBehaviour:
   parent: {fileID: 445350288}
   player: {fileID: 5217089949106228076}
   smallHealth: {fileID: 5962342633050919199, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
-  damage: 80
+  damage: 45
 --- !u!212 &1708997473
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -12671,7 +12675,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494788, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: speed
-      value: 5.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494811, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_Name
