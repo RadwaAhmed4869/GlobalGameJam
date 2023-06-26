@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 7974730532206136686}
   - component: {fileID: 7974730532206136673}
   - component: {fileID: 7018690601513541856}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Boy
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -57,7 +57,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ab16725285a3a54a87edbd3ba8b695a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6.5
+  speed: 4
 --- !u!114 &2795957465205494789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   buttonTime: 0.5
-  jumpHeight: 3.55
+  jumpHeight: 4
   cancelRate: 100
 --- !u!114 &2795957465205494790
 MonoBehaviour:
@@ -211,6 +211,7 @@ MonoBehaviour:
   onPlayerinRange: {fileID: 11400000, guid: 6aeabc01cf9c21646879274cfa9bcd99, type: 2}
   onPlayerinRangeTwo: {fileID: 11400000, guid: b6e4dd6344106424fb24f7971bef1db8, type: 2}
   MiniBoss: {fileID: 0}
+  MeleeBoss: {fileID: 0}
 --- !u!114 &7974730532206136687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -228,7 +229,6 @@ MonoBehaviour:
   smallHealth: {fileID: 5962342633050919199, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
   speed: 20
   damage: 40
-  impactEffect: {fileID: 1473625048454486, guid: 284f05ab582ef494a9ab1dd8bc1e76ae, type: 3}
 --- !u!114 &7974730532206136686
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +257,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
-  currentHealth: 50
+  currentHealth: 100
   respawnPoint: {x: 0, y: 0}
   isDead: 0
 --- !u!114 &7018690601513541856
@@ -272,7 +272,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b5ea7becbf8c71408fd10b41b3f51a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pointsText: {fileID: 0}
 --- !u!1 &7974730531999155649
 GameObject:
   m_ObjectHideFlags: 0
@@ -284,7 +283,7 @@ GameObject:
   - component: {fileID: 7974730531999155648}
   - component: {fileID: 7974730531999155662}
   - component: {fileID: 7974730531999155663}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Shield
   m_TagString: Shield
   m_Icon: {fileID: 0}
@@ -401,7 +400,7 @@ GameObject:
   - component: {fileID: 7974730533094847893}
   - component: {fileID: 7974730533094847898}
   - component: {fileID: 7974730533094847899}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -463,7 +462,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 2014684158, guid: eacab61f4887e1c45a7ad2e7389c3294, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

@@ -375,6 +375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying Enemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2348852934416682799, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
 --- !u!1 &79338192
@@ -457,7 +461,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 79338192}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -29.48, y: -1.9500002, z: -10}
+  m_LocalPosition: {x: -25.665556, y: -1.8300003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -871,20 +875,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_TrackedObjectOffset: {x: 0, y: 1.4499999, z: 0}
-  m_LookaheadTime: 1
+  m_LookaheadTime: 0.3
   m_LookaheadSmoothing: 10
   m_LookaheadIgnoreY: 1
   m_XDamping: 1
   m_YDamping: 1
   m_ZDamping: 0
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.25
   m_ScreenY: 0.47
   m_CameraDistance: 10
   m_DeadZoneWidth: 0.2
   m_DeadZoneHeight: 0.1
   m_DeadZoneDepth: 0
-  m_UnlimitedSoftZone: 0
+  m_UnlimitedSoftZone: 1
   m_SoftZoneWidth: 0.8
   m_SoftZoneHeight: 0.8
   m_BiasX: 0
@@ -1206,7 +1210,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2348852934416682793, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
       propertyPath: speed
-      value: 300
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2348852934416682793, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
       propertyPath: target
@@ -3329,7 +3333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699563678}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -29.48, y: -1.9500002, z: -10}
+  m_LocalPosition: {x: -25.665556, y: -1.8300003, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -7247,7 +7251,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -9612,6 +9616,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Flying Enemy (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 2348852934416682799, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
@@ -10411,7 +10419,7 @@ MonoBehaviour:
     keepConstantHandleSize: 0
     showNormalsInVertexMode: 0
     showBezierPathInVertexMode: 0
-    showDisplayOptions: 0
+    showDisplayOptions: 1
     showPathOptions: 1
     showVertexPathDisplayOptions: 0
     showVertexPathOptions: 1
@@ -12534,6 +12542,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2348852934416682793, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
+      propertyPath: speed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348852934416682793, guid: 52732a8af2474e242a84a66f74208b69, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 5217089949106228084}
@@ -12635,11 +12647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.48
+      value: -30.11
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -2.98
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_LocalPosition.z
@@ -12675,6 +12687,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494788, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795957465205494789, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
+      propertyPath: jumpHeight
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494811, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}

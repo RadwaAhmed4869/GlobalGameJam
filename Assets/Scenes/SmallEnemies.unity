@@ -514,7 +514,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 5217089949106228084}
-  offset: {x: 3, y: 1.2, z: -10}
   smoothTime: 0.25
 --- !u!1001 &92829738
 PrefabInstance:
@@ -9856,13 +9855,13 @@ MonoBehaviour:
     keepConstantHandleSize: 0
     showNormalsInVertexMode: 0
     showBezierPathInVertexMode: 0
-    showDisplayOptions: 0
+    showDisplayOptions: 1
     showPathOptions: 1
-    showVertexPathDisplayOptions: 0
+    showVertexPathDisplayOptions: 1
     showVertexPathOptions: 1
     showNormals: 1
     showNormalsHelpInfo: 0
-    tabIndex: 0
+    tabIndex: 1
   initialized: 1
 --- !u!4 &1774195679
 Transform:
@@ -11693,7 +11692,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -29.48
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 2795957465205494787, guid: 80b5affcda835b443a79ff227e6a3940, type: 3}
       propertyPath: m_LocalPosition.y
